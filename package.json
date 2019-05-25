@@ -1,0 +1,27 @@
+{
+  "name": "protractor-code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "rm -rf allure-report",
+    "test": "protractor conf.js --suite suite1",
+    "posttest": "allure generate allure-results --clean -o allure-report || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jithinkmatthew/protractor-code.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jithinkmatthew/protractor-code/issues"
+  },
+  "homepage": "https://github.com/jithinkmatthew/protractor-code#readme",
+  "devDependencies": {
+    "protractor": "^5.4.2",
+    "allure-commandline": "^2.9.0",
+    "jasmine-allure-reporter": "^1.0.2",
+    "jasmine-data-provider": "^2.2.0"
+  }
+}
