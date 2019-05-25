@@ -20,5 +20,20 @@ BasePage.prototype.waitUntilVisibilityOfByWebElement = async function (webElemen
 
 }
 
+BasePage.prototype.waitForInvisibilityOfByWebElement = async (webElement, timeout) => {
+    let until = protractor.ExpectedConditions;
+    await browser.wait(until.not(until.presenceOf(webElement)), timeout);
+
+};
+
+BasePage.prototype.selectDropDownValue = async function (dropDownWebElement, value) {
+    await dropDownWebElement.click();
+    const dropDownValue = await element(by.cssContainingText('option', ""+value+""));
+    await this.waitUntilVisibilityOfByWebElement(dropDownValue, 7000);
+    await dropDownValue.click();
+}
+
+
+
 module.exports = new BasePage();
 
