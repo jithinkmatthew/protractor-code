@@ -18,5 +18,11 @@
 
     `cd protractor-code`
 
+3. Install all the project dependencies by running,
 
+    `npm install`
 
+    This will create a `node_modules` folder inside your project
+4. Make sure that selenium server is running(`webdriver-manager`)
+
+5. Open command prompt in `VSCODE` or any other `IDE`. Make sure that you naviagate to the same project directory.
