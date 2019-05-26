@@ -33,6 +33,15 @@ const ProductListingPage = function () {
         await addToCart.click();
     }
 
+    this.clickOnMoreForNthProduct = async(nthProduct) => {
+        await browser.actions().mouseMove(element(by.css('ul.product_list li img'))).perform();
+                                                        
+        await browser.actions().mouseMove(element(by.xpath("(//a[@ title='View']/span)["+""+nthProduct+""+"]"))).perform();
+        const moreBtn = element(by.xpath("(//a[@ title='View']/span)["+""+nthProduct+""+"]"));
+        await base.waitForElementToBeClickable(moreBtn);
+        await moreBtn.click();
+    }
+
     this.getTextFromProductAddedSuccessfullyText = async() => {
         await base.waitForElementToBeClickable(productAddedSuccessfullyText);
         return await productAddedSuccessfullyText.getText();

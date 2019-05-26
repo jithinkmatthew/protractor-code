@@ -16,8 +16,11 @@ exports.config = {
   specs: ["todo-spec.js"],
 
   suites: {
-    suite1: ["./src/tests/positive_sc/**/*spec.js"],
-    suite2: ["./src/tests/positive_sc/verifySearchFunctionality.spec.js"]
+    suite3: ["./src/tests/positive_sc/**/*spec.js"],
+    suite2: ["./src/tests/positive_sc/verifySearchFunctionality.spec.js"],
+    suite1: ["./src/tests/negative_sc/verifyProductQuantityWithInvalidInput.spec.js"],
+
+    
   },
 
   capabilities: {

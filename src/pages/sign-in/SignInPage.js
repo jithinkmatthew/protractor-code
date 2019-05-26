@@ -13,6 +13,11 @@ const SignInPage = function () {
     const signInBtn = element(by.id("SubmitLogin"));
 
     const signInBlockTitle = element(by.css("#login_form h3"));
+
+    const errorMsg = element(by.css("div.alert-danger ol"));
+    const signUperrorMsg = element(by.css("#create_account_error ol"));
+
+    
     
 
     //Signup Methods
@@ -45,10 +50,12 @@ const SignInPage = function () {
     }
 
     this.enterSignInEmailAddress = async (email) => {
+        await signInEmailAddressField.clear();
         await signInEmailAddressField.sendKeys(email);
     }
 
     this.enterSignInPassword = async (pwd) => {
+        await signInPasswordField.clear();
         await signInPasswordField.sendKeys(pwd);
     }
 
@@ -60,6 +67,16 @@ const SignInPage = function () {
         await this.enterSignInEmailAddress(email);
         await this.enterSignInPassword(pwd);
         await this.clickOnSignInBtn();
+    }
+
+    this.getTextFromErrorMsg = async () => {
+        await base.waitForElementToBeClickable(errorMsg);
+        return await errorMsg.getText();
+    }
+
+    this.getTextFromSignUpErrorMsg = async () => {
+        await base.waitForElementToBeClickable(signUperrorMsg);
+        return await signUperrorMsg.getText();
     }
 
 }
