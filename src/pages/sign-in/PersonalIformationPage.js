@@ -25,16 +25,10 @@ const PersonalIformationPage = function () {
     const companyNameField = element(by.id("company"));
     const AddressField = element(by.id("address1"));
     const cityField = element(by.id("city"));
-    // const cityField = element(by.id("city"));
-
-    
-
-    
-
-
-    
-
-    
+    const stateField = element(by.id("id_state"));
+    const zipField = element(by.id("postcode"));
+    const additionalInfoField = element(by.id("other"));
+    const phoneField = element(by.id("phone_mobile"));
 
     const registerBtn = element(by.id("submitAccount"));
 
@@ -115,6 +109,50 @@ const PersonalIformationPage = function () {
     this.getTextFromYourAddressLastName = () => {
         return yourAddressLastName.getAttribute('value');
     }
+
+    this.enterCompanyName = async(compName) => {
+        await companyNameField.sendKeys(compName);
+    }
+
+    this.enterAddress = async(address) => {
+        await AddressField.sendKeys(address);
+    }
+
+    this.enterCity = async(city) => {
+        await cityField.sendKeys(city);
+    }
+
+    this.selectState = async(state) => {
+        await base.selectDropDownValue(stateField, state);
+    }
+
+    this.enterZip = async(address) => {
+        await zipField.sendKeys(address);
+    }
+
+    this.enterAdditionalInfo = async(addInfo) => {
+        await additionalInfoField.sendKeys(addInfo);
+    }
+    
+    this.enterPhone = async(phone) => {
+        await phoneField.sendKeys(phone);
+    }
+
+    this.clickOnRegisterBtn = async() => {
+        await registerBtn.click();
+    }
+
+
+    
+
+
+    
+
+
+
+
+
+    
 
     
     

@@ -16,7 +16,8 @@ exports.config = {
   specs: ["todo-spec.js"],
 
   suites: {
-    suite1: ["./src/tests/signin/**/*spec.js"]
+    suite1: ["./src/tests/positive_sc/**/*spec.js"],
+    suite2: ["./src/tests/positive_sc/verifySearchFunctionality.spec.js"]
   },
 
   capabilities: {

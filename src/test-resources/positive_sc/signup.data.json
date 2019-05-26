@@ -1,0 +1,25 @@
+{
+    "email": "test233333@gmail.com",
+    "firstName": "Jithin",
+    "lastName": "Mathew",
+    "password": "test123",
+    "dobDay": "30",
+    "dobMonth": "January",
+    "dobYear": "1991",
+    "personalInfoTitle": "CREATE AN ACCOUNT",
+    "personalInfoSubTitle": "YOUR PERSONAL INFORMATION",
+    "addressSubTitle": "YOUR ADDRESS",
+    "company": "XYZ Company",
+    "address": "3054  Joyce Street, Gulf Shores",
+    "city": "Gulf Shores",
+    "state": "Alabama",
+    "zip": "36016",
+    "additionalInfo": "This is additional Info",
+    "phone": "93442345555",
+    "myAccPageTitle": "MY ACCOUNT"
+
+    
+
+    
+    
+}

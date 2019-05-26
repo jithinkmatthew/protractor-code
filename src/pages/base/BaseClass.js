@@ -33,6 +33,12 @@ BasePage.prototype.selectDropDownValue = async function (dropDownWebElement, val
     await dropDownValue.click();
 }
 
+BasePage.prototype.clearBrowser = () => {
+    browser.manage().deleteAllCookies();
+    browser.executeScript('window.sessionStorage.clear(); window.localStorage.clear();');
+
+};
+
 
 
 module.exports = new BasePage();

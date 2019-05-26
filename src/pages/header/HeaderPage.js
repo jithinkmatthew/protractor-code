@@ -4,6 +4,9 @@ const HeaderPage = function () {
 
     const contactUsBtn = element(by.id("contact-link"));
     const signInBtn = element(by.css("div.header_user_info a"));
+    const signOutBtn = element(by.css("div.header_user_info a.logout"));
+
+    
 
 
     this.getTextFromActionsPageTitle = async () => {
@@ -16,6 +19,10 @@ const HeaderPage = function () {
 
     this.clickOnSignInBtn = async () => {
         await signInBtn.click();
+    }
+
+    this.clickOnSignOutBtn = async () => {
+        await signOutBtn.click();
     }
 
 }

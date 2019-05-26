@@ -1,0 +1,16 @@
+{
+    "email": "jithinmathew666@gmail.com",
+    "password": "test123",
+    "signinTitle": "ALREADY REGISTERED?",
+    "myaccountTitle": "MY ACCOUNT",
+    "signupTitle": "CREATE AN ACCOUNT",
+    "addedToCartMsg": "Product successfully added to your shopping cart",
+    "totalPrizeProdSum": "$18.51",
+    "deliveryAdPageTitle": "YOUR DELIVERY ADDRESS",
+    "billingAdPageTitle": "YOUR BILLING ADDRESS",
+    "shippingTitle": "SHIPPING",
+    "shippingCharge": "$2.00",
+    "paymentTitle": "BANK-WIRE PAYMENT.",
+    "paymentSuccess": "Your order on My Store is complete."
+
+}

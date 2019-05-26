@@ -40,7 +40,7 @@ const SignInPage = function () {
     
     //Login Methods
 
-    this.getTextFromsignInBlockTitle = async () => {
+    this.getTextFromsignInBlockTitle = async() => {
         return await signInBlockTitle.getText();
     }
 
