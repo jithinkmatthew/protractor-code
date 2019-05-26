@@ -25,4 +25,20 @@
     This will create a `node_modules` folder inside your project
 4. Make sure that selenium server is running(`webdriver-manager`)
 
-5. Open command prompt in `VSCODE` or any other `IDE`. Make sure that you naviagate to the same project directory.
+### How to run test scripts?
+
+1. Open command prompt in `VSCODE` or any other `IDE`. Make sure that you navigate to the same project directory.
+
+2. Two test suites are available. 
+    
+      `suite1`: Contains `positive` scenarios,
+
+      `suite2`: Contains `negative` scenarios.
+
+3. To `RUN` tests, Use `start-test.sh` file.
+        
+      `suite1` can execute by running `sh start-test.sh suite1`.
+
+      `suite2` can execute by running `sh start-test.sh suite2`.
+      
+4. After completing test execution, go to project repository open test report. (`allure-report` folder). Try to open the report in FirFox Browser.
