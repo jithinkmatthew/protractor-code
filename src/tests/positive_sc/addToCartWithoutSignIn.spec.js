@@ -11,7 +11,7 @@ const testdata = require('../../test-resources/positive_sc/addToCartWithoutSignI
 
 let randomTxt = baseutil.generateRandomAlphaNumeric(5);
 
-describe('Navigate to the application and complete signup process', function () {
+describe('Without doing Sign up process, add a product to the cart and place an order without any error', function () {
 
     beforeAll(async function () {
         await home.openUrl();
@@ -28,7 +28,7 @@ describe('Navigate to the application and complete signup process', function () 
         expect(await productlist.getNoOfProductListed()).toEqual(1);
     });
 
-    it('Add product to the cart adn continue pa', async function () {
+    it('Add product to the cart and verify', async function () {
 
         await productlist.clickOnAddToCartForNthProduct(1);
         expect(await productlist.getTextFromProductAddedSuccessfullyText()).toEqual(testdata.addedToCartMsg);

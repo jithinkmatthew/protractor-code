@@ -5,7 +5,7 @@ const myaccount = require('../../pages/sign-in/MyAccountPage');
 /*Test data */
 const testdata = require('../../test-resources/positive_sc/signInSignOut.data.json');
 
-describe('Navigate to the application and complete signup process', function () {
+describe('Verify SignIn/SignOut Functionality for a user with Valid Credentials', function () {
 
     beforeAll(async function () {
         await home.openUrl();

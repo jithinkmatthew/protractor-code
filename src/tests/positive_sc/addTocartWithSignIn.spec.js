@@ -7,7 +7,7 @@ const prodsummary = require('../../pages/product/ProductSummaryPage')
 /*Test data */
 const testdata = require('../../test-resources/positive_sc/addTocartWithSignIn.data.json');
 
-describe('Navigate to the application and complete signup process', function () {
+describe('Sign In with Valid Credentials, add product to the cart and place an order without any error', function () {
 
     beforeAll(async function () {
         await home.openUrl();

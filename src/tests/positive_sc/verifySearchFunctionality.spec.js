@@ -6,7 +6,7 @@ const productlist = require('../../pages/product/ProductListingPage');
 /*Test data */
 const testdata = require('../../test-resources/positive_sc/verifySearchFunctionality.data.json');
 
-describe('Navigate to the application and verify the search functionality', function () {
+describe('Login With Valid Credentials, search product by giving name in search field and verify the details', function () {
 
     beforeAll(async function () {
         await home.openUrl();

@@ -9,7 +9,7 @@ const testdata = require('../../test-resources/positive_sc/signup.data.json');
 
 let randomTxt = baseutil.generateRandomAlphaNumeric(5);
 
-describe('Navigate to the application and complete signup process', function () {
+describe('Navigate to home page, Click on SignIn button and completes the SignUp WorkFlow', function () {
 
     beforeAll(async function () {
         await home.openUrl();
@@ -30,7 +30,7 @@ describe('Navigate to the application and complete signup process', function () 
         expect(await perso.getTextFromPersonalIformationPageTitle()).toEqual(testdata.personalInfoTitle);
     });
 
-    it('enter user personal information', async function () {
+    it('enter user`s personal information', async function () {
         
         expect(perso.getTextFromPersonalInformationSubTitle()).toEqual(testdata.personalInfoSubTitle);
         
