@@ -25,4 +25,16 @@
     This will create a `node_modules` folder inside your project
 4. Make sure that selenium server is running(`webdriver-manager`)
 
-5. Open command prompt in `VSCODE` or any other `IDE`. Make sure that you naviagate to the same project directory.
+5. Open command prompt in `VSCODE` or any other `IDE`. Make sure that you navigate to the same project directory.
+
+6. Two test suites are available. 
+    
+      `suite1`: Contains `positive` scenarios,
+
+      `suite2`: Contains `negative` scenarios.
+
+7. To `RUN` tests, Use `start-test.sh` file.
+
+        `suite1` can execute by running `sh start-test.sh suite1`   ,
+
+        `suite2` can execute by running `sh start-test.sh suite2`
