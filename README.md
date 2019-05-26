@@ -35,6 +35,8 @@
 
 7. To `RUN` tests, Use `start-test.sh` file.
         
-      `suite1` an execute by running `sh start-test.sh suite1`.
+      `suite1` can execute by running `sh start-test.sh suite1`.
 
-      `suite2` an execute by running `sh start-test.sh suite2`.
+      `suite2` can execute by running `sh start-test.sh suite2`.
+      
+8. After completing test execution, go to project repository open test report. (`allure-report` folder). Try to open the report in FirFox Browser.
