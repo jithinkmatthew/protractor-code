@@ -1,5 +1,14 @@
 ## Protractor-code
 
+### Features
+
+Protractor is an end-2-end testing framework for Angular Applications.
+
+1. Keeping all the locators in page object model.
+2. Test Data is fetching from JSON File.
+3. Used `allure-jasmin` to generate test report.
+4. 
+
 
 ### Environment Set Up
 1. You should install Node JS in your machine. [Download it from here](https://nodejs.org/en/download/)
