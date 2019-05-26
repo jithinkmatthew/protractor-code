@@ -7,7 +7,7 @@ const signup = require('../../pages/sign-in/SignInPage');
 const testdata = require('../../test-resources/negative_sc/loginWithInvalidCredentials.data.json');
 const login = testdata.loginInputs;
 
-describe('Navigate to the application and complete signup process', function () {
+describe('Login With InValid credentials and Verify the validation messages/behaviour', function () {
 
     beforeAll(async function () {
         await home.openUrl();

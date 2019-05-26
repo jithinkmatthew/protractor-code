@@ -1,7 +1,7 @@
 const home = require('../../pages/home/HomePage');
 const signup = require('../../pages/sign-in/SignInPage');
 
-describe('Navigate to the application and complete signup process', function () {
+describe('Navigate to sign up page, enter an existing email id and verify validation messages/behaviour', function () {
 
     beforeAll(async function () {
         await home.openUrl();
@@ -16,7 +16,7 @@ describe('Navigate to the application and complete signup process', function () 
         await home.clickOnSignInBtn();
     });
 
-    it('enter user email and click on create an account button', async function () {
+    it('enter existing user email and click on create an account button', async function () {
 
         await signup.enterEmailAndClickOnCreateAccountBtn("jithinmathew666@gmail.com");
         expect(await signup.getTextFromSignUpErrorMsg()).toEqual("An account using this email address has already been registered. Please enter a valid password or request a new one.");

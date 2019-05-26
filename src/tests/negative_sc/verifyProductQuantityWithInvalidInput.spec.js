@@ -12,7 +12,7 @@ const testdata = require('../../test-resources/positive_sc/addToCartWithoutSignI
 
 let randomTxt = baseutil.generateRandomAlphaNumeric(5);
 
-describe('Navigate to the application and complete signup process', function () {
+describe('Select any of the product , give 0 value in the quantity field and verify the warning message', function () {
 
     beforeAll(async function () {
         await home.openUrl();
