@@ -38,6 +38,10 @@ Protractor is an end-2-end testing framework for Angular Applications.
 
 1. Open command prompt in `VSCODE` or any other `IDE`. Make sure that you navigate to the same project directory.
 
+
+Note : If you are using `WINDOWS`, Please use `Git Bash`. Navigate to your project repository and `Righ Click -> Git Bash Here` 
+
+
 2. Two test suites are available. 
     
       `suite1`: Contains `positive` scenarios,
