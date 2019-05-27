@@ -54,4 +54,4 @@ Note : If you are using `WINDOWS`, Please use `Git Bash`. Navigate to your proje
 
       `suite2` can execute by running `sh start-test.sh suite2`.
       
-4. After completing test execution, go to project repository open test report. (`allure-report` folder). Try to open the report in FirFox Browser.
+4. After completing test execution, go to project repository open test report. (`allure-report/index.html` folder). Try to open the report in FirFox Browser.
