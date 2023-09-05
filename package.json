@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/jithinkmatthew/protractor-code#readme",
   "devDependencies": {
-    "protractor": "^5.4.2",
+    "protractor": "^5.4.4",
     "allure-commandline": "^2.9.0",
     "jasmine-allure-reporter": "^1.0.2",
     "jasmine-data-provider": "^2.2.0"
